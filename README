@@ -1,0 +1,8 @@
+This temporary application will create the Brackets for the honreplays wiki.
+It is NOT fully tested on different types of bracket-making sites, but will at this moment work for It's Gosu's brackets.
+How to:
+1. Download the application.
+2. Compile the BracketConstructor.java
+3. Make a .txt file and copy the whole bracket in text to that file.
+4. Then run the application and you will have a file OutputFile.txt.
+5. Copy the content into the wiki and you are done.
