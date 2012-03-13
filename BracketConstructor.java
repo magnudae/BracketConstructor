@@ -19,14 +19,16 @@ class BracketMaker {
 	FileWriter out;
 	int bracketSize;
 	int teams;
+	String filename;
 	BracketMaker() throws IOException{
 		JOptionPane p = new JOptionPane();
 		bracketSize = Integer.parseInt(p.showInputDialog("Bracket-size? 32/64/128"));
 		teams  = bracketSize/2;
+		filename = p.showInputDialog("Name of your file? The one with the teams");
 		if(bracketSize != 32 && bracketSize != 64 && bracketSize != 128)
 			System.exit(1);
 		try{
-			in = new Scanner(new File("test.txt"));
+			in = new Scanner(new File(filename));
 			out = new FileWriter(new File("OutputFile.txt"));
 		}catch(Exception e){
 			System.out.println(in + " " + out);
