@@ -47,7 +47,7 @@ class BracketMaker {
 	
 	}
    
-	public void readAndMake(){
+	private void readAndMake(){
 		int i = 1;
 		int r = 1;
 		int round = 1;
