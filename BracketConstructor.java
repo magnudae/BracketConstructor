@@ -35,12 +35,19 @@ class BracketMaker {
 			System.exit(1);
 		}
 		out.write("==Bracket==\n{{" + bracketSize + "TeamBracket\n");
-		readAndMake();
-		out.write("}}");
-		out.close();
+		try{
+			out.write("==Bracket==\n{{" + bracketSize + "TeamBracket\n");
+			readAndMake();
+			out.write("}}");
+			out.close();
+		}catch(Exception e){
+			System.out.println("ERROR when writing to file");
+			System.exit(1);
+		}
+	
 	}
    
-	public void readAndMake() throws IOException{
+	public void readAndMake(){
 		int i = 1;
 		int r = 1;
 		int round = 1;
