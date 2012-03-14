@@ -8,7 +8,7 @@ import javax.swing.*;
 
 public class BracketConstructor {
 
-    public static void main(String[] args) throws IOException{
+    public static void main(String[] args) {
         new BracketMaker();
     }
 }
@@ -20,7 +20,7 @@ class BracketMaker {
 	int bracketSize;
 	int teams;
 	String filename;
-	BracketMaker() throws IOException{
+	BracketMaker(){
 		JOptionPane p = new JOptionPane();
 		bracketSize = Integer.parseInt(p.showInputDialog("Bracket-size? 32/64/128"));
 		teams  = bracketSize/2;
